@@ -1,10 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Barlow } from 'next/font/google'
-import { Fraunces } from 'next/font/google'
+import { Barlow, Fraunces } from 'next/font/google'
 
-const barlow = Barlow({weight: "600", subsets: ['latin'] })
-const fraunces = Fraunces({ weight: "700", subsets: ['latin']})
+const barlow = Barlow({ weight: "600", subsets: ['latin'] })
+const fraunces = Fraunces({ weight: ['700', '900'], subsets: ['latin'], variable: '--font-fraunces' })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={barlow.className}>{children}</body>
+      <body className={`${barlow.className} ${fraunces.variable}`}>{children}</body>
     </html>
   )
 }
