@@ -2,6 +2,7 @@ import Image from "next/image";
 import ArrowDown from "@/components/ArrowDown";
 import ImageTextSection from "@/components/ImageTextSection";
 import TextOnImage from "@/components/TextOnImage";
+import ClientTestimonial from "@/components/ClientTestimonial";
 
 export default function Home() {
   return (
@@ -52,6 +53,35 @@ export default function Home() {
           text="Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
           imageSource="/photography.jpg"
         />
+      </section>
+
+      <section className="grid justify-center gap-20 py-20">
+        <h2 className="mx-auto font-fraunces uppercase tracking-widest">
+          Client testimonials
+        </h2>
+
+        <div className="flex items-center justify-center gap-8">
+          <ClientTestimonial
+            text="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+            name="Emily R."
+            rank="Marketing Director"
+            imageSource="/emily.jpg"
+          />
+
+          <ClientTestimonial
+            text="Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience."
+            name="Thomas S."
+            rank="Chief Operating Officer"
+            imageSource="/thomas.jpg"
+          />
+
+          <ClientTestimonial
+            text="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
+            name="Jennie F."
+            rank="Business Owner"
+            imageSource="/jennie.jpg"
+          />
+        </div>
       </section>
     </main>
   );
