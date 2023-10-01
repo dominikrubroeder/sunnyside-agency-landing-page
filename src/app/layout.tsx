@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Barlow, Fraunces } from "next/font/google";
 import Link from "next/link";
 import Logo from "@/components/Logo";
+import Twitter from "@/components/Twitter";
 
 const barlow = Barlow({ weight: "600", subsets: ["latin"] });
 const fraunces = Fraunces({
@@ -45,6 +46,23 @@ export default function RootLayout({
         </header>
 
         {children}
+
+        <footer className="flex flex-col items-center justify-center gap-10 bg-[#90D4C6] px-4 py-16 text-center">
+          <div>Sunnyside</div>
+
+          <ul className="flex gap-14">
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+
+          <div className="flex gap-8">
+            <Twitter />
+            <Twitter />
+            <Twitter />
+            <Twitter />
+          </div>
+        </footer>
       </body>
     </html>
   );
