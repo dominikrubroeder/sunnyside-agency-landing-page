@@ -3,6 +3,7 @@ import ArrowDown from "@/components/ArrowDown";
 import ImageTextSection from "@/components/ImageTextSection";
 import TextOnImage from "@/components/TextOnImage";
 import ClientTestimonial from "@/components/ClientTestimonial";
+import ImageGrid from "@/components/ImageGrid";
 
 export default function Home() {
   return (
@@ -83,6 +84,8 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <ImageGrid />
     </main>
   );
 }
