@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ArrowDown from "@/components/ArrowDown";
-import ImageTextSection from "@/components/ImageTextSection";
+import ArrowDown from "@/components/svg/ArrowDown";
+import ImageTextBlock from "@/components/ImageTextBlock";
 import TextOnImage from "@/components/TextOnImage";
 import ClientTestimonial from "@/components/ClientTestimonial";
 import ImageGrid from "@/components/ImageGrid";
@@ -23,7 +23,7 @@ export default function Home() {
         />
       </section>
 
-      <ImageTextSection
+      <ImageTextBlock
         title="Transform your brand"
         imagePosition="Right"
         imageSource="/transform.jpg"
@@ -32,7 +32,7 @@ export default function Home() {
             most of the marketing for you."
       />
 
-      <ImageTextSection
+      <ImageTextBlock
         title="Stand out to the right audience"
         imagePosition="Left"
         imageSource="/stand-out.jpg"

@@ -1,9 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Barlow, Fraunces } from "next/font/google";
-import Link from "next/link";
-import Logo from "@/components/Logo";
-import Twitter from "@/components/Twitter";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const barlow = Barlow({ weight: "600", subsets: ["latin"] });
 const fraunces = Fraunces({
@@ -25,44 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${barlow.className} ${fraunces.variable} text-lg`}>
-        <header className="absolute left-0 right-0 top-0 z-50 flex items-center justify-between gap-4 p-4 text-white">
-          <div>
-            <Logo />
-          </div>
-
-          <nav>
-            <ul className="flex items-center gap-4">
-              <li>
-                <Link href="#about">About</Link>
-              </li>
-              <li>
-                <Link href="#services">Services</Link>
-              </li>
-              <li>
-                <Link href="#projects">Projects</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
+        <Header />
         {children}
-
-        <footer className="flex flex-col items-center justify-center gap-10 bg-[#90D4C6] px-4 py-16 text-center">
-          <div>Sunnyside</div>
-
-          <ul className="flex gap-14">
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-          </ul>
-
-          <div className="flex gap-8">
-            <Twitter />
-            <Twitter />
-            <Twitter />
-            <Twitter />
-          </div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

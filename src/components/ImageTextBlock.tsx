@@ -6,7 +6,7 @@ interface ImageTextSectionProps {
   imageSource: string;
   text: string;
 }
-export default function ImageTextSection({
+export default function ImageTextBlock({
   title,
   imagePosition,
   imageSource,
