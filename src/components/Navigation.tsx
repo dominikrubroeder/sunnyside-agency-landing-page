@@ -43,13 +43,13 @@ export default function Navigation() {
           className="group grid gap-1.5"
           onClick={() => setShowMobileMenu((previousState) => !previousState)}
         >
-          <span className="h-1 w-6 bg-[#979797] group-hover:bg-white"></span>
-          <span className="h-1 w-6 bg-[#979797] group-hover:bg-white"></span>
-          <span className="h-1 w-6 bg-[#979797] group-hover:bg-white"></span>
+          <span className="h-0.5 w-6 bg-white/50 group-hover:bg-white"></span>
+          <span className="h-0.5 w-6 bg-white/50 group-hover:bg-white"></span>
+          <span className="h-0.5 w-6 bg-white/50 group-hover:bg-white"></span>
         </button>
 
         {showMobileMenu && (
-          <div className="absolute right-0 top-12 grid w-80 justify-center gap-8 bg-white p-8 text-gray-400">
+          <div className="animate-fadeUpScale triangle absolute right-0 top-16 grid w-80 justify-center gap-8 bg-white p-8 text-gray-400 before:absolute before:right-0 before:top-[-24px]">
             {navigation}
 
             <button className="w-min rounded-full bg-yellow-400 px-8 py-4 uppercase text-black transition">
