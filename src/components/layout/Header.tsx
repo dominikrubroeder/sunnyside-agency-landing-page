@@ -7,7 +7,8 @@ export default function Header() {
       <Logo />
 
       <div className="flex items-center gap-4">
-        <Navigation />
+        <Navigation viewport="Desktop" />
+        <Navigation viewport="Mobile" />
       </div>
     </header>
   );
