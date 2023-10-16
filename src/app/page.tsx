@@ -41,7 +41,7 @@ export default function Home() {
             extend your brand in digital places."
       />
 
-      <section className="grid min-h-[37.5rem] grid-cols-2">
+      <section className="grid md:grid-cols-2">
         <TextOnImage
           title="Graphic Design"
           text="Great design makes you memorable. We deliver artwork that underscores

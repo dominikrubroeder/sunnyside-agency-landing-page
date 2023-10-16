@@ -27,7 +27,7 @@ export default function Navigation({ viewport = "Desktop" }: NavigationProps) {
   const navigation = data.map(({ title, href }, index) => (
     <li
       key={index}
-      className="list-none text-center hover:text-black md:text-left"
+      className="list-none text-center hover:text-black md:text-left md:hover:text-white"
     >
       <Link href={`#${href}`}>{title}</Link>
     </li>
