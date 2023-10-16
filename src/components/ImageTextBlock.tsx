@@ -35,13 +35,12 @@ export default function ImageTextBlock({
       >
         <h2 className="font-fraunces text-[2.5rem] leading-[1.2]">{title}</h2>
         <p>{text}</p>
-        <a
-          href=""
+        <button
           title="Learn more"
-          className="relative self-baseline pl-2 pr-2 font-fraunces uppercase after:absolute after:bottom-0 after:left-0 after:-z-10 after:h-4 after:w-full after:rounded-full after:bg-[#FAD400]"
+          className="relative self-baseline pl-2 pr-2 font-fraunces uppercase after:absolute after:bottom-0 after:left-0 after:right-0 after:-z-10 after:h-4 after:rounded-full after:bg-[#FAD400] after:transition-all hover:after:-left-1 hover:after:-right-1"
         >
           Learn more
-        </a>
+        </button>
       </div>
     </section>
   );
