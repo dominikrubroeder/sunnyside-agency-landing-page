@@ -1,20 +1,20 @@
 import Image from "next/image";
 
-interface ClientTestimonialProps {
+interface TestimonialProps {
   text: string;
   name: string;
   rank: string;
   imageSource: string;
 }
 
-export default function ClientTestimonial({
+export default function Testimonial({
   text,
   name,
   rank,
   imageSource,
-}: ClientTestimonialProps) {
+}: TestimonialProps) {
   return (
-    <div className="grid w-full max-w-[21.875rem] gap-14 text-center">
+    <div className="grid w-full max-w-[21.875rem] gap-4 text-center md:gap-14">
       <Image
         src={imageSource}
         alt={`${rank} preview image`}

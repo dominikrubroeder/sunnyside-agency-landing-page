@@ -2,7 +2,7 @@ import Image from "next/image";
 import ArrowDown from "@/components/svg/ArrowDown";
 import ImageTextBlock from "@/components/ImageTextBlock";
 import TextOnImage from "@/components/TextOnImage";
-import ClientTestimonial from "@/components/ClientTestimonial";
+import Testimonial from "@/components/Testimonial";
 import ImageGrid from "@/components/ImageGrid";
 
 export default function Home() {
@@ -61,22 +61,22 @@ export default function Home() {
           Client testimonials
         </h2>
 
-        <div className="flex items-center justify-center gap-8">
-          <ClientTestimonial
+        <div className="grid items-center justify-center gap-16 md:flex md:gap-8">
+          <Testimonial
             text="We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
             name="Emily R."
             rank="Marketing Director"
             imageSource="/emily.jpg"
           />
 
-          <ClientTestimonial
+          <Testimonial
             text="Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience."
             name="Thomas S."
             rank="Chief Operating Officer"
             imageSource="/thomas.jpg"
           />
 
-          <ClientTestimonial
+          <Testimonial
             text="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
             name="Jennie F."
             rank="Business Owner"
