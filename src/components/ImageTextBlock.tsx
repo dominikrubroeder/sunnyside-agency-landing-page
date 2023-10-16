@@ -23,8 +23,7 @@ export default function ImageTextBlock({
           src={imageSource}
           alt="Transform"
           layout="fill"
-          className="shrink-0"
-          objectFit="cover"
+          className="shrink-0 object-cover"
         />
       </div>
 

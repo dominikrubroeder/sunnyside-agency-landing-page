@@ -17,10 +17,12 @@ export default function TextOnImage({
         src={imageSource}
         alt="TextOnImage"
         layout="fill"
-        objectFit="cover"
+        className="object-cover"
       />
       <div className="absolute bottom-16 left-1/2 z-10 min-h-[8rem] -translate-x-1/2 text-center">
-        <h2 className="mb-6 w-max font-fraunces text-[1.75rem]">{title}</h2>
+        <h2 className="mx-auto mb-6 w-max font-fraunces text-[1.75rem]">
+          {title}
+        </h2>
         <p>{text}</p>
       </div>
     </div>
