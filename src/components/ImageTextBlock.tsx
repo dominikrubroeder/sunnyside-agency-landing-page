@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-interface ImageTextSectionProps {
+export interface ImageTextSectionProps {
   title: string;
   imagePosition: "Left" | "Right";
   imageSource: string;

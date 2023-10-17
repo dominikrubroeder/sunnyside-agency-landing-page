@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-interface TextOnImageProps {
+export interface TextOnImageProps {
   title: string;
   text: string;
   imageSource: string;
