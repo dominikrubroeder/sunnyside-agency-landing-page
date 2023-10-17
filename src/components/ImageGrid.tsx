@@ -7,8 +7,9 @@ export default function ImageGrid() {
         <Image
           src="/gallery-milkbottles.jpg"
           alt="Milkbottles"
-          layout="fill"
           className="object-cover"
+          sizes="(max-width: 768px) 50vw, 25vw"
+          fill
         />
       </div>
 
@@ -16,8 +17,9 @@ export default function ImageGrid() {
         <Image
           src="/gallery-orange.jpg"
           alt="Milkbottles"
-          layout="fill"
           className="object-cover"
+          sizes="(max-width: 768px) 50vw, 25vw"
+          fill
         />
       </div>
 
@@ -25,8 +27,9 @@ export default function ImageGrid() {
         <Image
           src="/gallery-cone.jpg"
           alt="Milkbottles"
-          layout="fill"
           className="object-cover"
+          sizes="(max-width: 768px) 50vw, 25vw"
+          fill
         />
       </div>
 
@@ -34,8 +37,9 @@ export default function ImageGrid() {
         <Image
           src="/gallery-sugarcubes.jpg"
           alt="Milkbottles"
-          layout="fill"
           className="object-cover"
+          sizes="(max-width: 768px) 50vw, 25vw"
+          fill
         />
       </div>
     </section>

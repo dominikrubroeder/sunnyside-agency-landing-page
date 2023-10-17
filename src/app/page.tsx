@@ -18,8 +18,9 @@ export default function Home() {
         <Image
           src="/header.jpg"
           alt="Orange on blue background"
-          layout="fill"
-          objectFit="cover"
+          className="object-cover"
+          sizes="100vw"
+          fill
         />
       </section>
 

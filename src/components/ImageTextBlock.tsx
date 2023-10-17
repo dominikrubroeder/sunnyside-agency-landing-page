@@ -22,8 +22,9 @@ export default function ImageTextBlock({
         <Image
           src={imageSource}
           alt="Transform"
-          layout="fill"
           className="shrink-0 object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          fill
         />
       </div>
 

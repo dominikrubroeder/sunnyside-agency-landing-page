@@ -16,8 +16,9 @@ export default function TextOnImage({
       <Image
         src={imageSource}
         alt="TextOnImage"
-        layout="fill"
         className="object-cover"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        fill
       />
       <div className="absolute bottom-16 left-1/2 z-10 min-h-[8rem] -translate-x-1/2 text-center">
         <h2 className="mx-auto mb-6 w-max font-fraunces text-[1.75rem]">
