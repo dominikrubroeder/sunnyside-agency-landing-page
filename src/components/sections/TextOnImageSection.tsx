@@ -1,7 +1,8 @@
-import { textOnImageData } from "@/data";
+import { getContentData } from "@/data";
 import TextOnImage from "@/components/TextOnImage";
 
-export default function TextOnImageSection() {
+export default async function TextOnImageSection() {
+  const { textOnImageData } = await getContentData();
   return (
     <section className="grid md:grid-cols-2">
       {textOnImageData.map((textOnImage, index) => (

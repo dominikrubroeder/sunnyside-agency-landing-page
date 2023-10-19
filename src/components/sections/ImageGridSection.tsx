@@ -1,7 +1,14 @@
 import Image from "next/image";
-import { imageGridData } from "@/data";
+import { getContentData } from "@/data";
 
-export default function ImageGridSection() {
+export interface ImageGridProps {
+  alt: string;
+  src: string;
+}
+
+export default async function ImageGridSection() {
+  const { imageGridData } = await getContentData();
+
   return (
     <section className="grid grid-cols-2 lg:grid-cols-4">
       {imageGridData.map((image) => (

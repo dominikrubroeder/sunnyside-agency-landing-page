@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-interface TestimonialProps {
+export interface TestimonialProps {
   text: string;
   name: string;
   rank: string;

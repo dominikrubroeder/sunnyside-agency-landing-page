@@ -1,7 +1,8 @@
-import { testimonialsData } from "@/data";
+import { getContentData } from "@/data";
 import Testimonial from "@/components/Testimonial";
 
-export default function TestimonialsSection() {
+export default async function TestimonialsSection() {
+  const { testimonialsData } = await getContentData();
   return (
     <section className="grid justify-center gap-20 py-20">
       <h2 className="mx-auto font-fraunces uppercase tracking-widest">

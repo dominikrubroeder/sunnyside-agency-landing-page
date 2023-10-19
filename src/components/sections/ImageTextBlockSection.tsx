@@ -1,14 +1,8 @@
-import { contentData } from "@/data";
+import { getContentData } from "@/data";
 import ImageTextBlock from "@/components/ImageTextBlock";
 
-async function getData(): Promise<contentData> {
-  const res = await fetch("http://localhost:3000/data.json");
-  if (!res.ok) throw new Error("Failed to fetch data");
-  return res.json();
-}
-
 export default async function ImageTextBlockSection() {
-  const { imageTextBlockData } = await getData();
+  const { imageTextBlockData } = await getContentData();
 
   return (
     <section>

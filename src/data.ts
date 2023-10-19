@@ -1,10 +1,23 @@
 import { ImageTextSectionProps } from "@/components/ImageTextBlock";
 import { TextOnImageProps } from "@/components/TextOnImage";
+import { TestimonialProps } from "@/components/Testimonial";
+import { ImageGridProps } from "@/components/sections/ImageGridSection";
+import { HeroSectionProps } from "@/components/sections/HeroSection";
 
-export type contentData = {
+export type ContentData = {
+  heroData: HeroSectionProps;
   imageTextBlockData: ImageTextSectionProps[];
   textOnImageData: TextOnImageProps[];
+  testimonialsData: TestimonialProps[];
+  imageGridData: ImageGridProps[];
 };
+
+export async function getContentData(): Promise<ContentData> {
+  const res = await fetch("http://localhost:3000/data.json");
+  if (!res.ok) throw new Error("Failed to fetch data");
+  return res.json();
+}
+
 export const imageTextBlockData: ImageTextSectionProps[] = [
   {
     title: "Transform your brand",
