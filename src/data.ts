@@ -15,7 +15,6 @@ export type ContentData = {
 };
 
 export async function getContentData(): Promise<ContentData> {
-  // https://vercel.com/guides/loading-static-file-nextjs-api-route
   const res = await fs.readFile(process.cwd() + "/public/data.json", "utf8");
   return JSON.parse(res);
 }
