@@ -19,6 +19,12 @@ export async function getContentData(): Promise<ContentData> {
   return JSON.parse(res);
 }
 
+export const heroData: HeroSectionProps = {
+  h1: "We are creatives",
+  imageSrc: "/header.jpg",
+  imageAlt: "Orange on blue background",
+};
+
 export const imageTextBlockData: ImageTextSectionProps[] = [
   {
     title: "Transform your brand",
