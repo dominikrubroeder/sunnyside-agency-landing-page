@@ -1,3 +1,5 @@
+import { promises as fs } from "fs";
+
 import { ImageTextSectionProps } from "@/components/ImageTextBlock";
 import { TextOnImageProps } from "@/components/TextOnImage";
 import { TestimonialProps } from "@/components/Testimonial";
@@ -13,9 +15,9 @@ export type ContentData = {
 };
 
 export async function getContentData(): Promise<ContentData> {
-  const res = await fetch("http://localhost:3000/data.json");
-  if (!res.ok) throw new Error("Failed to fetch data");
-  return res.json();
+  // https://vercel.com/guides/loading-static-file-nextjs-api-route
+  const res = await fs.readFile(process.cwd() + "/public/data.json", "utf8");
+  return JSON.parse(res);
 }
 
 export const imageTextBlockData: ImageTextSectionProps[] = [
